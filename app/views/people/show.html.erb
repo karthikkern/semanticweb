@@ -1,0 +1,27 @@
+<p>
+  <b>"<%= @person.name %>" likes books:</b>
+</p>
+<table>
+  <% @person.books.each do |book| %>
+  <tr><td><%=h book.name %></td></tr>
+  <% end %>
+</table>
+
+<p>
+  <b>"<%= @person.name %>" writes articles:</b>
+</p>
+<table>
+  <% @person.articles.each do |article| %>
+  <tr><td><%=h article.name %></td></tr>
+  <% end %>
+</table>
+
+<p>
+  <b>"<%= @person.name %>" listens songs:</b>
+</p>
+<table>
+  <% @person.songs.each do |song| %>
+  <tr><td><%=h song.name %></td></tr>
+  <% end %>
+</table>
+<%= link_to 'Back', people_path %>

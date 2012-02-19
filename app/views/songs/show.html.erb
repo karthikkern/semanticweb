@@ -1,0 +1,27 @@
+<p>
+  <b>"<%= @song.name %>" referred by books:</b>
+</p>
+<table>
+  <% @song.books.each do |book| %>
+  <tr><td><%=h book.name %></td></tr>
+  <% end %>
+</table>
+
+<p>
+  <b>"<%= @song.name %>" described in articles:</b>
+</p>
+<table>
+  <% @song.articles.each do |article| %>
+  <tr><td><%=h article.name %></td></tr>
+  <% end %>
+</table>
+
+<p>
+  <b>"<%= @song.name %>" listened by people:</b>
+</p>
+<table>
+  <% @song.people.each do |person| %>
+  <tr><td><%=h person.name %></td></tr>
+  <% end %>
+</table>
+<%= link_to 'Back', songs_path %>

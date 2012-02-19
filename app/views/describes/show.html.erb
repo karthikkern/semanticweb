@@ -1,0 +1,13 @@
+<p>
+  <b>Article:</b>
+  <%= @describe.article_id %>
+</p>
+
+<p>
+  <b>Song:</b>
+  <%= @describe.song_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_describe_path(@describe) %> |
+<%= link_to 'Back', describes_path %>

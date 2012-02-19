@@ -1,0 +1,27 @@
+<p>
+  <b>"<%= @article.name %>" contained in books:</b>
+</p>
+<table>
+  <% @article.books.each do |book| %>
+  <tr><td><%=h book.name %></td></tr>
+  <% end %>
+</table>
+
+<p>
+  <b>"<%= @article.name %>" written by people:</b>
+</p>
+<table>
+  <% @article.people.each do |person| %>
+  <tr><td><%=h person.name %></td></tr>
+  <% end %>
+</table>
+
+<p>
+  <b>"<%= @article.name %>" describes songs:</b>
+</p>
+<table>
+  <% @article.songs.each do |song| %>
+  <tr><td><%=h song.name %></td></tr>
+  <% end %>
+</table>
+<%= link_to 'Back', articles_path %>

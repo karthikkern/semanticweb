@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Semantic Web</title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <link rel="icon" href="/assets/rails.png" />
+  </head>
+  <body>
+    <div id="container">
+      <h2>"HOBBIES" context</h2>
+      <a href="/people">People</a> | <a href="/articles">Articles</a> |
+      <a href="/songs">Songs</a> | <a href="/books">Books</a>
+      <br/><br/>
+      <%= yield %>
+    </div>
+  </body>
+</html>

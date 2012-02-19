@@ -1,0 +1,25 @@
+<%= form_for(@describe) do |f| %>
+  <% if @describe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@describe.errors.count, "error") %> prohibited this describe from being saved:</h2>
+
+      <ul>
+      <% @describe.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :article_id %><br />
+    <%= f.number_field :article_id %>
+  </div>
+  <div class="field">
+    <%= f.label :song_id %><br />
+    <%= f.number_field :song_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

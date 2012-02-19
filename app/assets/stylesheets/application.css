@@ -1,0 +1,25 @@
+body {
+  background-color: #4B7399;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+a {
+  color: #0000FF;
+  text-decoration: none;
+}
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+#notice {
+  padding: 5px 8px;
+  margin: 10px 0;
+  color: green;
+}
